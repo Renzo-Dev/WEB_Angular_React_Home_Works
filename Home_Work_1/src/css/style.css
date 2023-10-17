@@ -1,0 +1,374 @@
+/* src/css/style.css */
+@import 'normalize.css';
+
+#content {
+    height: 100%;
+    width: 90%;
+}
+
+.task3 {
+    display: flex;
+}
+
+header {
+    width: 100%;
+    background: #f3f3f3;
+    padding: 10px;
+}
+
+.first_items, .second_items {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+}
+
+.first_items {
+    align-items: center;
+}
+
+.first_items > span {
+    font-family: Arial, serif;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.second_items > a {
+    text-decoration: none;
+}
+
+.second_items > button {
+    border: none;
+    border-radius: 5px;
+    background: #ffc000;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.second_items > button > span:first-child {
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.second_items > a > span {
+    font-size: 20px;
+}
+
+.search-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#search-form {
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 17px;
+    background: #e2e2e2;
+}
+
+#search-text,
+#location {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#categories_list {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:visited {
+    color: black;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:visited {
+    background-color: white;
+    color: black;
+}
+
+/*adawdadad*/
+.product_list {
+    margin-top: 40px;
+}
+
+.item {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #5e5e5e;
+    display: flex;
+    flex-direction: row;
+}
+
+.item_information {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.item_name {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Segoe UI", serif;
+    text-decoration: none;
+}
+
+.location_and_information {
+    display: flex;
+    position: relative;
+    bottom: 20px
+}
+
+.location_and_information > div {
+    font-family: "Segoe UI", serif;
+    font-weight: 500;
+}
+
+.location_and_information > div:last-child {
+    margin-left: 30px;
+}
+
+.item_price {
+    position: absolute;
+    left: 1725px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.searchImg_wrapper, .locationImg_wrapper {
+    background: #e8edf1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: left;
+    padding: 7px 15px 7px 7px;
+}
+
+.category-list {
+    margin-top: 20px;
+    max-height: 550px;
+    overflow: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item_category {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 55px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+    width: 350px;
+}
+
+.item_category > div {
+    font-size: 20px;
+    color: black;
+    white-space: break-spaces;
+}
+
+.item_category:hover > div {
+    color: #d2d2d2;
+}
+
+.item_category > img {
+    margin-right: 20px;
+}
+
+footer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    width: 250px;
+    height: 100%;
+    list-style: none;
+}
+
+footer > img {
+    margin-left: 70px;
+    margin-right: 80px;
+}
+
+footer ul:last-child {
+    margin-right: 250px;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Segoe UI", serif;
+    color: #698cb2;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+footer > ul > li > a:hover {
+    color: black;
+}
+
+.information_item {
+    margin-top: 30px;
+    width: 70%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.information_item > h3 {
+    align-self: start;
+    margin-left: 20px;
+}
+
+.information_item > div {
+    align-self: start;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.information_item > div > div {
+    margin-right: 20px;
+}
+
+.information_item > hr {
+    color: black;
+}
+
+.text_about_product {
+    font-size: 17px;
+    font-family: "Segoe UI", serif;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#images > img:last-child {
+    margin-right: 45px;
+}
+
+.views_wrapper {
+    font-size: 16px;
+    font-family: "Segoe UI", serif;
+    width: 100%;
+    position: relative;
+    right: 20px;
+    padding: 10px;
+    background: #eaeaea;
+}
+
+.sales_inf {
+    width: 350px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sales_inf .price {
+    border: 2px solid #c9c9c9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.writeToSeller, .phoneNumber {
+    background: #37b5cf;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 23px;
+    padding: 5px;
+    margin-top: 10px;
+    color: white;
+}
+
+.info_about_seller {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #cfcfcf;
+}
+
+.info_about_seller > img {
+    position: relative;
+    bottom: 40px;
+    margin-bottom: -30px;
+}
+
+.seller_name {
+    font-family: "Segoe UI", serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.info_about_seller > button {
+    margin: 15px 0;
+    border: 2px solid #37b5cf;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Segoe UI", serif;
+    color: #37b5cf;
+    font-size: 20px;
+    width: 90%;
+    background: transparent;
+}
+
+.comp {
+    color: red;
+    margin-top: 20px;
+    margin-left: 10px;
+}
