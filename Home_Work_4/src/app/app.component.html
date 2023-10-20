@@ -9,7 +9,8 @@
   <label>Введите логин от админ аккаунта
     <input [(ngModel)]="login">
   </label>
-  <div *ngIf="isAdmin()">Логин верен</div>
+  <div *ngIf="isAdmin(); else loginIncorrect"> Логин верен </div>
+  <ng-template #loginIncorrect> Неверный логин</ng-template>
   <p>
   <input type="button" value="switch" (click)="isCahnge()">
   <div>{{test}}</div>
@@ -27,8 +28,21 @@
   <div *ngSwitchDefault>
     неверный цвет
   </div>
+    <p>
 </div>
-  <div>
+  <div *ngFor="let user of users">
+    {{ user }}
+  </div>
+</div>
+<h2>Task 3</h2>
+<div>
+  <button style="margin-right: 20px" (click)="showCarInfo()">Показати інформацію про автомобіль</button>
+  <button style="margin-right: 20px" (click)="showPlaneInfo()">Показати інформацію про літак</button>
+  <button (click)="showShipInfo()">Показати інформацію про корабель</button>
 
+  <div *ngIf="currentInfo">
+    <h2>{{ currentInfo.name }}</h2>
+    <p>Розмір: {{ currentInfo.size }} метрів</p>
+    <p>Максимальна швидкість: {{ currentInfo.speed }} км/год</p>
   </div>
 </div>
