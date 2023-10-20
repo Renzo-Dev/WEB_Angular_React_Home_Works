@@ -1,0 +1,34 @@
+<h2>Task 1</h2>
+<div>
+  <app-percent-pipe></app-percent-pipe>
+  <p>
+  <app-currency-pipe></app-currency-pipe>
+</div>
+<h2>Task 2</h2>
+<div>
+  <label>Введите логин от админ аккаунта
+    <input [(ngModel)]="login">
+  </label>
+  <div *ngIf="isAdmin()">Логин верен</div>
+  <p>
+  <input type="button" value="switch" (click)="isCahnge()">
+  <div>{{test}}</div>
+  <P>
+  <div>
+  <label for="color">Введите цвет [желтый,синий,красный,зеленый]
+    <input id="color" [(ngModel)]="color">
+  </label>
+</div>
+  <div [ngSwitch]="color">
+  <div *ngSwitchCase="'желтый'" style="color: yellow">желтый</div>
+  <div *ngSwitchCase="'синий'" style="color: dodgerblue">синий</div>
+  <div *ngSwitchCase="'красный'" style="color: red">красный</div>
+  <div *ngSwitchCase="'зеленый'" style="color: green">зеленый</div>
+  <div *ngSwitchDefault>
+    неверный цвет
+  </div>
+</div>
+  <div>
+
+  </div>
+</div>
